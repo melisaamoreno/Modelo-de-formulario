@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modelo de form con JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="formulariojs.css" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+          
+              <label for="exampleInputEmail1" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+              <p class="empty-alert emailOk">El campo está vacío</p>
+            </div>
+            <!--<div class="mb-3">-->
+              <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="inputPassword">
+              <p class="empty-alert errorPass"> El campo está vacío</p>
+
+            </div>
+            <!--<div class="mb-3">-->
+                <label for="exampleInputPassword1" class="form-label">Confirmar contraseña: </label>
+                <input type="password" class="form-control" id="inputRepeatPassword">
+                <p class="empty-alert errorPassRep"> El campo está vacío</p>
+              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="check1">
+              <label class="form-check-label" for="exampleCheck1"> Acepto terminos y condiciones</label>
+            </div>
+            <p class="empty-alert alertCheck"> Es necesario aceptar Terminos y Condiciones para continuar</p>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          <div class="alert success">
+              <p>La contraseña es correcta </p>
+
+          </div>
+          <div class="alert error"> 
+              <p>Las contraseñas no coinciden</p>
+
+          </div>
+
+          <script src="formulariojs.js">
+
+          </script>
+    </body>
+</html>
